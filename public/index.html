@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Riga Digital</title>
+  <meta charset="UTF-8" />
+  <title>New Riga Alliance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <!-- Шрифт Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand-badge">New Riga Alliance</div>
 
-<div class="container">
-    <h1 class="title">New Riga Digital</h1>
-    <p class="subtitle">Премиальный сервис Telegram: Stars, Premium, профиль</p>
+      <div class="logo-block">
+        <div class="logo-icon">NR</div>
+        <div class="logo-text">
+          <h1>Премиальные сервисы Telegram</h1>
+          <p>Звёзды, Premium и оформление профиля в одном месте.</p>
+        </div>
+      </div>
 
-    <button id="startBtn" class="main-btn">Начать</button>
-</div>
+      <div class="status-chip">
+        <span class="status-dot"></span>
+        Mini App активен · Beta
+      </div>
+    </header>
 
-<script src="app.js"></script>
+    <main class="app-main">
+      <section class="cards-grid">
+        <button class="service-card primary" id="starsBtn">
+          <div class="card-title-row">
+            <span class="emoji">⭐</span>
+            <h2>Telegram Stars</h2>
+          </div>
+          <p>Пакеты звёзд по сниженной цене. Аккуратно, безопасно, без лишних действий.</p>
+          <div class="card-footer-row">
+            <span class="pill">от 100 до 10 000★</span>
+            <span class="link-text">Скоро доступно</span>
+          </div>
+        </button>
 
+        <button class="service-card" id="premiumBtn">
+          <div class="card-title-row">
+            <span class="emoji">💎</span>
+            <h2>Telegram Premium</h2>
+          </div>
+          <p>Подписка дешевле, чем в приложении. Оплата удобным способом.</p>
+          <div class="card-footer-row">
+            <span class="pill pill-soft">3 / 6 / 12 месяцев</span>
+            <span class="link-text">Скоро</span>
+          </div>
+        </button>
+
+        <button class="service-card" id="profileBtn">
+          <div class="card-title-row">
+            <span class="emoji">🎨</span>
+            <h2>Оформление профиля</h2>
+          </div>
+          <p>Подбор подарков, юзернейма и общего стиля под твою личную легенду.</p>
+          <div class="card-footer-row">
+            <span class="pill pill-outline">Концепт New Riga</span>
+            <span class="link-text">По запросу</span>
+          </div>
+        </button>
+      </section>
+
+      <section class="helper-block">
+        <p class="helper-title">Как это работает?</p>
+        <ol>
+          <li>Выбираешь услугу в мини-приложении.</li>
+          <li>Оставляешь заявку через бота.</li>
+          <li>Мы подтверждаем заказ и проводим оплату.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>New Riga Alliance · 2025</span>
+      <span class="footer-accent">Сделано аккуратно и без лишнего шума.</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
+
